@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <style>
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100px;
+            background: white;
+
+        }
+
+        /* .card {
+            box-shadow: 0 1px 1px 1px;
+            width: 100%;
+            border-radius: 5px;
+        } */
+    </style>
+    <link rel="stylesheet" href="fbsignuptask.css">
+    <script src="./fbsignuptask.js"></script>
+</head>
+
+<body onload="createDateOptions();createMonthoptions();createYearoptions();">
+
+    <!-- <div class="card" id="card"></div> -->
+
+
+    <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+
+    <p style="text-align:center;font-size:25px;font-weight:600;font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;">
+        Create a new account</p>
+    <div style="text-align:center;margin-top:-20px;color:#606770;">it's quick and easy.</div>
+    <hr>
+    <div class="container">
+
+        <div style="display:flex;">
+            
+                <div>
+                    <input type="text" placeholder="First name" name="firstnm"
+                    style="height: 38px; width: 200px; margin-left: 560px;margin-top:6px;">
+                </div>
+
+                <div style="padding-left:10px"> 
+                    <input type="text" placeholder="Sur name" name="surnm"
+                    style="height:38px;width:200px;margin-top:6px;">
+                </div>
+        </div>
+
+        <div style="padding-top:10px">
+            <input type="text" placeholder="Mobile number or email Address" name="mobilenm"
+                style="height: 38px; width: 410px; margin-left: 560px;">
+        </div>
+
+        <div style="padding-top:10px"> <input type="password" placeholder="New password" name="mobilenm"
+                style="height: 38px; width: 410px; margin-left: 560px;">
+        </div>
+
+        <p style="font-size:14;color:#606770;padding-left:560px">Date of birth &#63;</p>
+
+        <div style="padding-left:555px">
+        
+        <form>
+            <select class="selectclass" id="select1"></select>
+        
+            <select class="selectclass" id="select2"></select>
+
+            <select class="selectclass" id="selectid"></select>
+
+        </form>
+        
+        </div>
+
+    </div>
+</body>
+
+</html>

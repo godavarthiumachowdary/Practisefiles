@@ -1,0 +1,19 @@
+<html>
+ <body>
+ <script>
+  function checkscript(str){
+    if( str.length<6){
+    return str
+    }
+   let result=str 
+    if(str.substring(4,10)== "script"){
+    result=str.substring(0,4)+str.substring(10,str.length)
+    }
+    return result
+  }
+  document.write(checkscript("javascript"),"<br>")
+  document.write(checkscript("commonscriptok"),"<br>")
+  document.write(checkscript("java"),"<br>")
+ </script>   
+ </body>   
+</html>

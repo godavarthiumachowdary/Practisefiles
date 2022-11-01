@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <script>
+        function stringpos(str, char) {
+            ctr = 0;
+            for (let i = 0; i < str.length; i++) {
+                if ((str.charAt(i) == char) && (i >= 1 && i <= 3)) {
+                    ctr = 1;
+                }
+            }
+            if (ctr == 1) { 
+                return true; 
+            }else{
+                return false
+            }
+           
+
+        }
+        document.write(stringpos("raviteja","a"), "<br>")
+        document.write(stringpos("foolish","o")) 
+    </script>
+</body>
+
+</html>

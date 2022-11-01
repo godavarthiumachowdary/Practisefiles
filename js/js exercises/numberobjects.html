@@ -1,0 +1,44 @@
+<html>
+<body>
+<script>
+var x=15;
+var n=5.3465567
+var y= new Number(15);
+var z=new Number(15);
+var s=x.toString()
+var e=x.toExponential(3)
+var f=n.toFixed(4)
+var p=n.toPrecision(3)
+
+
+
+document.writeln("TYPE OF X:"+typeof x+"<br>")
+document.writeln("TYPE OF y:"+typeof y+"<br>")
+document.writeln("type of z:"+typeof z+"<br>")
+document.writeln("x==y:"+(x==y)+"<br>")
+document.writeln(x===y)
+
+document.writeln("TYPE OF s:"+typeof s+"<br>")
+document.writeln("exponential form:"+e+"<br>")
+document.writeln("fixed form:"+f+"<br>")
+document.writeln("precision funct:"+p+"<br>")
+document.writeln("Type of e:"+typeof e+"<br>")
+
+var a=Number(e)
+var b=parseInt(f)
+var c=parseFloat(f)
+
+document.writeln("TYPE OF A:"+typeof a+"<br>")
+document.writeln("TYPE OF b:"+typeof b+"<br>"+"valueof b" +b+ "<br>")
+document.writeln("min_value:"+Number.MIN_VALUE+"<br>")
+document.writeln("max_value:"+Number.MAX_VALUE+"<br>")
+document.writeln("positive infinity:"+Number.POSITIVE_INFINITY+"<br>")
+document.writeln("NAN:"+Number.NAN+"<br>")
+</script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,16 @@
+<html>
+ <head>
+    <p id="demo"></p>
+    <script>
+    const person={
+      firstname:"john",
+      lastname: "doe",
+      id:4425,
+    }
+    person.name=function(){
+     return this.firstname+" "+ this.lastname
+    }
+    document.getElementById("demo").innerHTML="my father is"+ person.name()
+    </script>
+ </head>   
+</html>

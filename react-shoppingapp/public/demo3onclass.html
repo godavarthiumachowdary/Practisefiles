@@ -1,0 +1,19 @@
+<script>
+    class baseclass
+    {
+     constructor(msg){
+      document.write("baseclassconstructor"+msg+"<br>");
+     }
+    }
+    class derivedClass extends baseclass
+    {
+        constructor(){
+            super("hello!")
+            document.write("derivedclassconstructor");
+        }
+    }
+      let obj=new derivedClass();
+    
+</script>
+
+

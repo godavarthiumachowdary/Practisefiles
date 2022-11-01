@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <p id="demo">
+        </p>
+        <script>
+          const myObj={"name":"uma","age":26,"city":"hyderabad"} ; 
+          const myJSON=JSON.stringify(myObj);
+          localStorage.setItem("testJSON", myJSON);
+
+          let text = localStorage.getItem("testJSON");
+          let obj= JSON.parse(text);
+
+          document.getElementById("demo").innerHTML=obj.name
+
+        </script>
+    </body>
+</html>

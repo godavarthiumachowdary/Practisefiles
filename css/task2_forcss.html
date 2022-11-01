@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.scroll{
+    display:block;
+    border:1px dashed red;
+    padding:5px;
+    margin-top:5px;
+    width:300px;
+    height:50px;
+    overflow:scroll;
+    background-color: antiquewhite;
+    color:brown;
+}
+p:hover{
+ visibility:hidden;
+}
+.class1{
+    position:relative;
+    background-color:yellow;
+    top:20px;
+    left:80px;
+
+}
+
+
+.class2{
+    position:absolute;
+    background-color:yellow;
+    top:20px;
+    left:80px;
+
+}
+.class3{
+    position:fixed;
+    background-color:yellow;
+    top:40px;
+    left:80px;
+
+}
+
+#borderimg1{
+border:10px solid transparent;
+padding:15px;
+border-image-source:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvdADuE69u7OS4R0wyGyZHzyLr60LotJX6WQWVI30G3A&s");
+border-image-repeat: round;
+border-image-slice: 30;
+border-image-width: 20px;
+
+}
+
+#multibackground{
+   
+    background-image:url('https://static8.depositphotos.com/1070439/922/v/600/depositphotos_9228383-stock-illustration-simple-ornamental-decorative-frame.jpg'),
+                     
+                     url( 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvdADuE69u7OS4R0wyGyZHzyLr60LotJX6WQWVI30G3A&s');
+    background-position:right bottom,left top;
+    background-repeat: no-repeat,no-repeat;  
+          
+}
+p.text1{
+ white-space:nowrap;
+width:200px;
+border:1px solid red;
+overflow:hidden;
+text-overflow: clip;
+}
+</style>
+</head>
+<body>
+    <div id="multibackground">
+    <p>LISTS</p>
+    <ul>
+        <li style="float:left;width:10%;">physics</li>
+        <li style="float:left;width:10%;">chemistry</li>
+        <li style="float:left;width:10%;">chemistry</li>
+    </ul>
+    
+    <br>
+    <ol style>
+        <li style="list-style-type: upper-roman;">physics</li>
+        <li style="list-style-type: upper-roman;">chemistry</li>
+        <li style="list-style-type: upper-roman;">chemistry</li>
+    </ol>
+    <br>
+    <p>cursors</p>
+    <div style="cursor:auto">auto</div>
+    <div style="cursor:crosshair">crosshair</div>
+    <div style="cursor:default">default</div>
+    <div style="cursor:pointer">pointer</div>
+    <div style="cursor:move">move</div>
+    <div style="cursor:text">text</div>
+    <div style="cursor:wait">wait</div>
+    <div style="cursor:help">help</div>
+
+    <h3>example of scroll</h3>
+    <div class="scroll">
+        The background property is a shorthand property for specifying all the background properties in one declaration.
+        Here, the background image is only shown once, and it is also positioned in the top-right corner.
+    </div>
+    <p>visible in normal way</p>
+    <div class="class1">this div have relative positioning</div>
+    <div class="class2">this div have absolute positioning</div>
+    <div class="class3">this div have fixed positioning</div>
+    <br><br>
+    <div style="background-color:green;width:300px;height:100px;position:absolute;left:120px;z-index:3;"></div>
+    <div style="background-color:red;width:300px;height:100px;position:absolute;left:80px;z-index:2;"></div>
+    <div style="background-color:yellow;width:300px;height:100px;position:absolute;left:40px;z-index:1;"></div>
+    <div style= "margin-top:150px;"></div>
+    <p id="borderimg1">border image</p>
+    <p class="text1">tutorials point orginated from idea of having a class of readers who expect</p>
+    <p class="text2">tutorials point orginated from idea of having a class of readers who expect</p>
+</div>
+</body>
+</html>

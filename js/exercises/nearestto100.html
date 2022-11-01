@@ -1,0 +1,21 @@
+<html>
+<head>
+    <script>
+     function nearest(a,b){
+      let x=Math.abs(100-a),y=Math.abs(100-b)
+      if(x<y){
+        return a
+      }
+      else if(a===b){
+        return"you have given equal numbers"
+      }
+      else {
+      return b
+      }
+     }  
+     document.write(nearest(50,50.1),"<br>")
+     document.write(nearest(-30,40),"<br>")
+     document.write(nearest(120,121),"<br>")
+</script>
+</head>    
+</html>

@@ -1,0 +1,205 @@
+<html>
+
+<head>
+    <script>
+        function validate(){
+            validateusername();
+            validatepassword();
+            validateconfirmpassword();
+            validatechooselang();
+            validatesecurityques();
+            validatesecurityans();
+            if( (document.myform.username.value != "") && (document.myform.passwrd.value.length > 8) && 
+                (document.myform.passwrd.value === document.myform.confirmpasswrd.value) && (document.myform.choose.value != "0") &&
+                (document.myform.choose1.value != "0") && (document.myform.securityans.value != "") ){
+                alert("The Form has been successfully submitted");}
+                else{
+                    alert("**please give complete details")   
+                } 
+            }
+       
+
+        function validateusername() {
+            var text;
+            if (document.myform.username.value == "") {
+             text="User Name is required.";
+             document.getElementById("demo").innerHTML="&#9888;"+ "  "+text;
+             document.myform.username.focus();
+            }else{
+                document.getElementById("demo").innerHTML="";
+            }
+        }
+          function validatepassword() {
+            var text;
+
+            if(document.myform.passwrd.value == ""){
+            text="Password is required.";
+            document.getElementById("demo1").innerHTML="&#9888;"+ "  "+text;
+            document.myform.passwrd.focus();
+            }else if(document.myform.passwrd.value.length < 8){
+               document.getElementById("demo1").innerHTML = "**Password length must be atleast 8 characters";  
+            }
+            else{
+                document.getElementById("demo1").innerHTML="";
+            }
+        }
+           
+        
+         function validateconfirmpassword() {
+            var text;
+            if(document.myform.confirmpasswrd.value == ""){
+            text=" Confirm Password is required.";
+            document.getElementById("demo2").innerHTML="&#9888;"+ "  "+text;
+            document.myform.confirmpasswrd.focus();
+            }else if(document.myform.confirmpasswrd.value.length < 8){
+               document.getElementById("demo2").innerHTML = "**Password length must be atleast 8 characters";  
+            }
+            else if(document.myform.passwrd.value === document.myform.confirmpasswrd.value){
+                document.getElementById("demo2").innerHTML = ""; 
+            }
+            else if(document.myform.passwrd.value !== document.myform.confirmpasswrd.value){
+                document.getElementById("demo2").innerHTML = "**Incorrect password";
+            } 
+            else{
+                document.getElementById("demo2").innerHTML="";
+            }
+         }
+
+            function validatechooselang() {
+            var text;
+            if(document.myform.choose.value == "0"){
+            text="Preferred Language is required.";
+            document.getElementById("demo3").innerHTML="&#9888;"+ "  "+text;
+            document.myform.choose.focus();
+            }else{
+                document.getElementById("demo3").innerHTML="";
+            }
+        }
+           function validatesecurityques() {
+            var text;
+            if(document.myform.choose1.value == "0"){
+            text="Security Question is required.";
+            document.getElementById("demo4").innerHTML="&#9888;"+ "  "+text;
+            document.myform.choose1.focus();
+            }else{
+                document.getElementById("demo4").innerHTML="";
+            }
+        }
+            function validatesecurityans() {
+            var text;
+            if(document.myform.securityans.value == ""){
+            text="Security Answer is required.";
+            document.getElementById("demo5").innerHTML="&#9888;"+ "  "+text;
+            document.myform.securityans.focus();
+            }else{
+                document.getElementById("demo5").innerHTML="";
+            }
+
+        }   
+    </script>
+</head>
+
+<body>
+
+    <style>
+        select {
+            width: 100%;
+            height: 36px;
+            color: blueviolet;
+        }
+
+        option:not(:first-of-type) {
+            color: black;
+        }
+
+        input::placeholder {
+            color: blueviolet;
+        }
+    </style>
+
+
+    <div style="display:flex">
+        <div><b style="font-size:20px;">Create Your account</b></div>
+        <div style="color:red;  position: absolute;right: 20px;"> <u>SIGN IN </u></div>
+    </div>
+    <div style="display:flex;margin-top:10px">
+        <div style=" margin-left:30px;"><b>Basic details</b></div>
+        <div style=" margin-left:50px;"><b>Personal details</b></div>
+        <div style=" margin-left:50px;"><b>Address</b></div>
+    </div>
+    <hr>
+    <p>GARBAGE/JUNK VALUES IN PROFILE MAY LEAD TO DEACTIVATION</p>
+    <p style=" margin-top:-14px">Please use a valid E-Mail ID and mobile number in registration.</p>
+
+
+
+    <form action="" name="myform">
+
+        <input type="text"  placeholder="User Name" name="username" oninput= "validateusername()" style="width:95%; height:36px;">
+        <p id="demo" style="color:red;"></p>
+
+        <div style="margin-top:45px">
+            <input type="password"  minlength="8" required placeholder="Password" name="passwrd" oninput= "validatepassword()" style="width:95%; height:36px;">
+        </div>
+        <p id="demo1" style="color:red;"></p>
+
+        <div style="margin-top:45px">
+            <input type="password" minlength="8" required placeholder="Confirm Password" name="confirmpasswrd" oninput= "validateconfirmpassword()" style="width:95%; height:36px;">
+        </div>
+        <p id="demo2" style="color:red;"></p>
+
+        <div style="margin-top:45px;width:95%; height:36px;">
+
+            <select name="choose" onChange= "validatechooselang()">
+                <option value="0">Preferred Language</option>
+                <option value="1">English</option>
+                <option value="2">Hindi</option>
+                <option value="3">Telugu</option>
+            </select>
+        </div>
+        <p id="demo3" style="color:red;"></p>
+
+        <div style="margin-top:45px;width:95%; height:36px;">
+
+            <select name="choose1" onChange= "validatesecurityques()">
+                <option value="0">Security Question</option>
+                <option value="1">what is your Date of Birth ?</option>
+                <option value="2">where is your first schooling?</option>
+                <option value="3">Name of your pet dog?</option>
+                <option value="4">what is your favourite food ?</option>
+            </select>
+
+        </div>
+        <p id="demo4" style="color:red;"></p>
+
+
+        <div style="margin-top:45px">
+            <input type="text" placeholder="Security Answer" name="securityans" oninput= "validatesecurityans()" style="width:95%; height:36px;">
+        </div>
+        <p id="demo5" style="color:red;"></p>
+
+
+        <div style="display:flex">
+            <div style="margin-top:55px">
+                <input type="button" style="width:100px;height:36px;background-color:white;border-color:grey"
+                    value="Cancel"></button>
+            </div>
+
+
+
+            <div style="margin-top:55px;position: absolute;right: 20px;">
+                <input type="button" name="clickingonbutton" onClick="validate()" 
+                    style="width:117px;height:36px;color:white;background-color:orange;font-weight: 700; border-color: orange;"
+                    value="Continue &#8594;"></button> 
+                </div> 
+
+                <!-- <div style="margin-top:55px;position: absolute;right: 20px;" onclick="validate()">
+                    <button style="width:117px;height:36px;color:white;background-color:orange;font-weight: 700; border-color: orange;">Continue &#8594;</button>
+                </div>
+             -->
+        </div>
+    </form>
+
+</body>
+
+</html>

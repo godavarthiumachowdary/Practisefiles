@@ -1,0 +1,26 @@
+<script>
+    var username = prompt("Enter Name");
+    var designation = prompt("Enter Designation");
+    var productname = prompt("Enter Product Name");
+    class Product {
+        _productName;
+        get Productn() {
+            return this._productName;
+        }
+        set Productn(newName)
+         {
+            if (designation == "admin") {
+                this._productName = newName;
+            } else {
+                document.write(`notauthorizied: Hello ${username} You are not authorized to set product name.`);
+            }
+        }
+    }
+
+    let obj = new Product();
+        obj.Productn = productname;
+    if (obj.Productn) {
+        document.write("Productname:" + obj.Productn)
+    }
+    
+</script>

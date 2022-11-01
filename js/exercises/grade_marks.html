@@ -1,0 +1,22 @@
+<html>
+<body>
+<script>
+ function grade(examtype,marks){
+if(marks>=89 && marks<=100 && examtype=="normal"){
+ return "A+";
+}
+else if(marks>=90 && examtype=="finalexam"){
+ return "A+"
+}
+else{
+ return false
+}
+ }  
+ document.write(grade("normal",90),"<br>")
+ document.write(grade("normal",50),"<br>")
+ document.write(grade("finalexam",98),"<br>")
+ document.write(grade("finalexam",89))
+
+</script>    
+</body>    
+</html>

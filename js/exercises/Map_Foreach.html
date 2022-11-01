@@ -1,0 +1,17 @@
+<html>
+<body>
+ <p id="demo"></p>   
+</body> 
+<script>
+ const fruits= new Map([
+ ["apples",500] ,
+ ["apple",500] ,
+ ["app",500] 
+ ]) ;
+ let text=" ";
+ fruits.forEach (function(key,value){
+    text=text+key+"="+value+"<br>"
+ })
+document.write(text)
+</script>   
+</html>

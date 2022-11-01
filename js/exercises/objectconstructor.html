@@ -1,0 +1,23 @@
+<html>
+ <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+ <script>
+function person(first,last,age,eye){
+    this.firstName=first;
+    this.lastName=last;
+    this.age=age;
+    this.eye=eye;
+    this.name=function(){
+    return this.firstName+" "+this.lastName
+    }
+}
+   const myfather =new person("ammi","raju",56,"black")
+   const mymother =new person("padmaja","atla",45,"black")
+
+   myfather.language="telugu"
+   document.getElementById("demo").innerHTML= myfather.age
+   document.getElementById("demo1").innerHTML= mymother.eye
+ </script>   
+ </body>   
+</html>

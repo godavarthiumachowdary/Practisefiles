@@ -1,0 +1,16 @@
+<html>
+<body>
+ <p id="demo"></p>   
+ <script>
+ const person={
+firstname:"john",
+lastname:"joe",
+get fullname(){
+return this.firstname+ this.lastname
+}
+}  
+ person.lang="en";
+ document.getElementById("demo").innerHTML= person.fullname ;
+ </script>   
+</body>    
+</html>

@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<div style="margin-top:50px;margin-left:50px;">
+A:<input type="number" id="a" placeholder="Enter a value"> 
+<div style="margin-top:20px;">
+B:<input type="number" id="b" placeholder="Enter b value"> </div>
+</div>
+<div style="margin-top:30px;margin-left:122px;">
+<input type="button" onClick="sum()" value="sum">
+</div>
+<div style="margin-top:30px;margin-left:50px;"> 
+Sum:<span id="output"></span>
+</div>
+<script>
+function sum(){
+
+
+document.getElementById("output").innerText =parseInt(document.getElementById("a").value)+parseInt(document.getElementById("b").value);
+}
+
+</script>
+</body>
+</html>

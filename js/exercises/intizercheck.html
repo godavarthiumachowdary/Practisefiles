@@ -1,0 +1,24 @@
+<html>
+<body>
+<script>
+function check(x,y){
+ if((x==8 || y==8)){
+return true;
+ }   
+ else if((x+y)==8){
+return true;
+ }  
+ else if (Math.abs(x-y)==8){
+return true;
+ }
+ else{
+return false;
+ }    
+}    
+document.write(check(-4,-4),"<br>")
+document.write(check(8,4),"<br>")
+document.write(check(9,17),"<br>")
+document.write(check(1,2),"<br>")
+</script>    
+</body>    
+</html>

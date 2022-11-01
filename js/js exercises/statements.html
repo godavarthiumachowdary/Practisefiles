@@ -1,0 +1,45 @@
+<html>
+
+<div id="output"></div>
+<div id="output2"></div>
+<div id="output3"></div>
+
+
+
+<script>
+    let a= 15;
+    let b= 15;
+    let c= 10;
+
+    if(a==b && a>c || a!=b){
+        document.getElementById("output").innerText = "a greater than b";
+    }else{
+        document.getElementById("output").innerText = "a is not greater than b";
+    }
+       
+    if(a<b){
+        document.getElementById("output2").innerText = "a less than  b";
+    }else{
+        document.getElementById("output2").innerText = "a not less than  b";
+
+    }
+
+
+    switch (a) {
+     case 10:
+        document.getElementById("output3").innerText  = "Sunday";
+         break;
+    case 15:
+        document.getElementById("output").innerText = "Monday";
+    break;
+
+    case 14:
+  document.getElementById("output2").innerText = "sat";
+    break;
+
+}
+
+   
+</script>
+
+</html>

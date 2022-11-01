@@ -1,0 +1,179 @@
+.selectclass
+{
+    padding-left: 46x; 
+    padding-right: 70px; 
+    padding-top: 6px; 
+    padding-bottom: 6px; 
+    margin-right: 12px;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+}
+#select3
+{
+    margin-top: 5px;
+}
+
+#div1
+{
+    margin-left: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+    color:#606770;
+    
+}
+#img1{
+    padding-top:10px;
+    width: 17px;
+    height: 17px
+}
+#img3{
+    padding-top:15px;
+    width: 17px;
+    height: 17px
+}
+#div2{
+    padding-top:-10px;
+}
+/* #div11{height: 38px; 
+    width: 200px; 
+    margin-left: 560px;margin-top:6px;
+    border-color: #ccd0d5;
+    border-radius:5px
+} */
+
+#id1
+{
+    box-sizing: border-box; 
+    width: 127px; 
+    height: 33px; 
+    border: 1px solid #ccd0d5;
+    border-radius: 5px; 
+    display:flex;
+    margin-right: 20px;
+    font-size: 15px;
+    line-height: 36px;
+    padding: 0 28px 0 10px;
+
+}
+.div5{
+    display:flex;
+    margin-bottom: 3px;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+position:absolute;
+
+}
+
+.options{
+  
+   
+    height: 36px; 
+    width: 420px; 
+    margin-top:-25px;
+     border: 1px solid #ccd0d5;
+    border-radius:5px;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+} 
+.div8{
+    
+    margin-top: 10px;
+    font-size: 14px;
+    color:#606770;
+}
+
+#genderOption{
+    height: 36px; 
+    width: 420px; 
+
+    margin-top:10px;
+     border: 1px solid #ccd0d5;
+    border-radius:5px;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+
+}
+#div9{
+
+    margin-top: 10px;
+    font-size: 13px;
+    color:#606770;
+}
+/* #div10{
+
+    
+} */
+#button1
+{
+    box-sizing: border-box; 
+    width: 180px; 
+    height: 40px; 
+    border: 1px #000000 solid; 
+    border-radius: 5px; 
+    margin-top: 10px;
+    margin-left: 110px;
+    background-color: rgb(0,164,0);
+    color:white;
+    font-size: 19px;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border-color: #3b6e22 #3b6e22 #2c5115;
+}
+.facebook-img{
+    background-color: rgb(245, 239, 239);
+    background:#f3eeee;
+}
+#img9{
+      position: absolute; 
+      left:935;
+     right:510;
+     top: 425; 
+     width: 21px; 
+
+}
+
+#img4{
+   position:absolute;
+   left:935;
+   top: 365; 
+   width:21px;
+}
+
+#img5{
+    position: absolute; 
+    left:935;
+   right:510;
+   top: 510; 
+   width: 21px; 
+
+}
+#img6{
+    position: absolute; 
+    left:718;
+   right:510;
+   top: 216; 
+   width: 21px; 
+
+}
+#img7{
+    position: absolute; 
+    left:930;
+   top: 216; 
+   width: 21px; 
+
+}
+#img8{
+    position: absolute; 
+    left:930;
+   top: 273; 
+   width: 21px; 
+
+}
+#img10{
+    position: absolute; 
+    left:930;
+   top: 320; 
+   width: 21px; 
+
+}
+

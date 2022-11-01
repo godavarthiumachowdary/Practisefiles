@@ -1,0 +1,15 @@
+<html>
+<head>
+<p id ="demo"></p>    
+<script>
+const fruits=new Map([
+["apples",300],
+["bananas",200],
+["mango",500]
+]);
+
+fruits.set("grapes",200);
+document.getElementById("demo").innerHTML=fruits.get("grapes");
+</script>    
+</head>    
+</html>

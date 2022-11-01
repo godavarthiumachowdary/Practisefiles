@@ -1,0 +1,12 @@
+<html>
+<body>
+<script>
+    function test(arg){
+    document.write(this.num,"<br>",arg);
+    }
+    
+    let b =test.bind({num:99},10);
+    b()
+</script>    
+</body>    
+</html>

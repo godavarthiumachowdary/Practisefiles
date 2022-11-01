@@ -1,0 +1,20 @@
+<script>
+    class Register 
+    {
+        Name = "SamsungTV";
+        Rating = {
+            Rate: {
+                count: 3000,
+                Value: 4.5
+            }
+        }
+     
+     get RateValue(){
+        return this.Rating.Rate.Value;
+    }
+    }
+    let obj = new Register();
+    document.write("Ratevalue:" + obj.RateValue);
+</script>
+
+

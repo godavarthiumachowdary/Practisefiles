@@ -1,0 +1,42 @@
+<html>
+    <div id="output"></div>
+    <div id="output2"></div>
+    <div id="output3"></div>
+
+ <script>
+  let a=20;
+  let b=20;
+  let c=10;
+
+  if(a==b && a!=b || a>b){
+     document.getElementById("output").innerText="a greater than b";
+  }else{ 
+     document.getElementById("output").innerText="a is not greater than b";
+  }
+
+  if(a<b){
+     document.getElementById("output2").innerText="a less than b";
+  }else{
+     document.getElementById("output2").innerText="a is not less than  b";
+  }
+
+  if(a==b || a<b && a>b){
+     document.getElementById("output3").innerText="a greater than b";
+  }else{
+     document.getElementById("output3").innerText="a is less than b";
+  }
+  
+  switch (a) {
+    case 20:
+     document.getElementById("output").innerText="Monday";
+     break;
+    case 22:
+     document.getElementById("output2").innerText="Tuesday";
+    break;
+    case 21:
+     document.getElementById("output3").innerText="wednesday";
+     break;
+  }  
+
+ </script>   
+</html>

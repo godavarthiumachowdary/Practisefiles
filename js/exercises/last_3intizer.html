@@ -1,0 +1,20 @@
+<html>
+
+<body>
+    <script>
+        function integercheck(str1, str2, str3) {
+            if (str1.charAt(str1.length - 1) == str2.charAt(str2.length - 1) && str2.charAt(str2.length - 1) == str3.charAt(str3.length - 1)) {
+                return true
+            }
+
+            else {
+                return false
+            }
+        }
+        document.write(integercheck("10", "400", "30"), "<br>")
+        document.write(integercheck("105", "4005", "305"), "<br>")
+        document.write(integercheck("10", "43", "34"))   
+    </script>
+</body>
+
+</html>

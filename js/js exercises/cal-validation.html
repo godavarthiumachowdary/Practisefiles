@@ -1,0 +1,121 @@
+<html>
+
+<body>
+
+    <div style="margin-top:50px;margin-left:50px;">
+
+        A:<input type="number" id="a" placeholder="Enter a value">
+        <div style="margin-left:20px; color:red" id="errMsg1"></div>
+
+        <div style="margin-top:30px;">
+            B:<input type="number" id="b" placeholder="Enter a value">
+            <div style="margin-left:20px; color:red" id="errMsg2"></div>
+        </div>
+
+    </div>
+    <div style="margin-top:30px;margin-left:122px;">
+
+        <input type="button" onClick="sum()" value="sum">
+        <input type="button" onClick="substract()" value="substract">
+        <input type="button" onClick="divide()" value="divide">
+        <input type="button" onclick="multiply()" value="multiply">
+    </div>
+
+    <div style="margin-top:30px;">
+        sum:<span id="output"></span>
+    </div>
+
+
+    <div style="margin-top:30px;">
+
+        substact:<span id="output2"></span>
+    </div>
+
+    <div style="margin-top:30px;">
+        Division:<span id="output3"></span>
+    </div>
+
+    <div style="margin-top:30px;">
+        Multiply:<span id="output4"></span>
+    </div>
+
+
+
+
+    <script>
+        function sum() {
+            clearValues();
+            if (validate()) {
+                document.getElementById("output").innerText = parseInt(document.getElementById("a").value) + parseInt(document.getElementById("b").value);
+
+            } else {
+                displayErrorMsg();
+            }
+        }
+
+        function substract() {
+            clearValues();
+            if (validate()) {
+                document.getElementById("output2").innerText = parseInt(document.getElementById("a").value) - parseInt(document.getElementById("b").value);
+            }
+            else {
+                displayErrorMsg();
+            }
+        }
+
+        function divide() {
+            clearValues();
+            if (validate()) {
+                document.getElementById("output3").innerText = parseInt(document.getElementById("a").value) / parseInt(document.getElementById("b").value);
+            }
+            else {
+                displayErrorMsg();
+            }
+        }
+
+        function multiply() {
+            clearValues();
+            if (validate()) {
+                document.getElementById("output4").innerText = parseInt(document.getElementById("a").value) * parseInt(document.getElementById("b").value);
+            }
+            else {
+                displayErrorMsg();
+            }
+        }
+
+        function validate() {
+            if (document.getElementById("a").value && document.getElementById("b").value) {
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+
+        function displayErrorMsg() {
+
+            if (!document.getElementById("a").value) {
+
+                document.getElementById("errMsg1").innerText = "Please enter value";
+
+            }
+
+            if (!document.getElementById("b").value) {
+                document.getElementById("errMsg2").innerText = "Please enter value";
+            }
+
+        }
+
+        function clearValues() {
+
+            document.getElementById("output").innerText = "";
+            document.getElementById("output2").innerText = "";
+            document.getElementById("output3").innerText = "";
+            document.getElementById("output4").innerText = "";
+
+        }
+    </script>
+
+</body>
+
+</html>

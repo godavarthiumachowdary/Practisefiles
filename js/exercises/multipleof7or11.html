@@ -1,0 +1,21 @@
+<html>
+<body>
+<script>
+ function multipleof(x,y){
+   if((x>0 && y>0 )&&((x%7===0 && y%7!==0)|| (x%11===0 && y%11!==0))){
+    return true
+  }
+  else if((y>0 && x>0) &&((y%7===0 && x%7!==0 )|| (y%11===0 && x%11!==0))){
+    return true
+  }
+  else{
+    return false
+  }
+ }
+ document.write(multipleof(14,21),"<br>")  
+ document.write(multipleof(22,10),"<br>")  
+ document.write(multipleof(3,30),"<br>") 
+ document.write(multipleof(-1,14),"<br>")   
+</script>    
+</body>    
+</html>

@@ -1,0 +1,19 @@
+<html>
+ <head>
+ <script>
+var categories=["All","Electronics","Footwear"];
+  function shop(){
+   for( var x of categories){
+     var li=document.createElement("li");
+     li.innerHTML=x;
+     document.querySelector("ol").appendChild(li);
+   }
+  }
+ </script>   
+ </head> 
+ <body onload="shop()">
+  <ol>
+
+  </ol>
+ </body>  
+</html>

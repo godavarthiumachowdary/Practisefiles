@@ -1,0 +1,18 @@
+<html>
+<body>
+<script>
+ function lowupperc(str){
+if(str.length<3){
+    return str.toUpperCase() 
+}
+else if(str.length>=3){ 
+   return str.substring(0,3).toLowerCase()+str.substring(3,str.length)
+}
+}
+document.write(lowupperc("ravi"),"<br>")
+document.write(lowupperc("raviteja"),"<br>")
+document.write(lowupperc("RA"),"<br>")
+document.write(lowupperc("RaviTeja"),"<br>")
+</script>    
+</body>    
+</html>

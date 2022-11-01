@@ -1,0 +1,11 @@
+<html>
+<body>
+<script>
+    function test(arg1,arg2){
+    document.write(this.num,"<br>",arg1,"<br>",arg2);
+    }
+    
+    test.call({num:100},10,20)
+</script>    
+</body>    
+</html>

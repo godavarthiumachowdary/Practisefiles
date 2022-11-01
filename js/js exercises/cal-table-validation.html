@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title> operations </title>
+    </head>
+    <body>
+       <div style="margin-top:20px;margin-left:30px">
+       A<span style="color:red;">*</span>: <input type="number" id="a">
+       <div style="color:red"; id="errorMsg1"></div>
+       </div>  
+        <div style="margin-top:20px;margin-left:30px">
+       B<span style="color:red;">*</span>:<input type="number" id="b"> 
+       <div style= "color:red;" id="errorMsg2"></div>   
+        </div>
+        <div style="margin-top:20px;margin-left:20px">
+       <input type="button" onClick="sum()" value="Sum">
+       <input type="button" onClick="substract()"value="Substract">
+       <input type="button" onClick="division()" value="Division">
+       <input type="button" onClick="multiply()"value="Multiply">
+       <input type="button" onClick="allCal()"  value="All" >
+        </div>
+
+       <table border="10px" style="margin-top:50px;margin-left:20px">
+        <tr>
+        <th>Sum</th>
+        <th>substract</th>
+        <th>division</th>
+        <th>multiply</th>
+        </tr> 
+        <tr>
+        <td id="output"></td>
+        <td id="output1"></td>
+        <td id="output2"></td>
+        <td id="output3"></td>
+        </tr>
+       </table>
+
+       <script>
+
+     
+        function sum(){
+         clearErrormsgs();
+         // clearValues();
+          if (validate()){
+         document.getElementById("output").innerText= parseInt(document.getElementById("a").value)+parseInt(document.getElementById("b").value)
+        }
+        else{
+         displayErrorMsg();}
+         }   
+
+        function substract(){
+         clearErrormsgs();
+         // clearValues();
+          if (validate()){
+           document.getElementById("output1").innerText= parseInt(document.getElementById("a").value)-parseInt(document.getElementById("b").value)
+        }
+        else{
+         displayErrorMsg();}
+        }
+
+        function division(){
+         clearErrormsgs();
+         // clearValues();
+         if (validate()){
+           document.getElementById("output2").innerText= parseInt(document.getElementById("a").value)/parseInt(document.getElementById("b").value) 
+         }
+        else{
+         displayErrorMsg();}
+         }
+
+        function multiply(){
+         clearErrormsgs();
+         // clearValues();
+         if (validate()){
+           document.getElementById("output3").innerText= parseInt(document.getElementById("a").value)*parseInt(document.getElementById("b").value)
+        }
+        else{
+         displayErrorMsg();}
+         }
+
+        function validate(){
+         if(document.getElementById("a").value&&document.getElementById("b").value){
+            return true;
+          } else {
+            return false;
+          }
+         }
+        function displayErrorMsg(){
+         if (!document.getElementById("a").value){
+            document.getElementById("errorMsg1").innerText="please enter value";
+         }
+         if (!document.getElementById("b").value){
+            document.getElementById("errorMsg2").innerText="please enter value";
+         }
+
+        }
+        function clearValues(){
+         document.getElementById("output").innerText=""
+         document.getElementById("output1").innerText=""
+         document.getElementById("output2").innerText=""
+         document.getElementById("output3").innerText=""
+        }
+        function clearErrormsgs(){
+         document.getElementById("errorMsg1").innerText=""
+         document.getElementById("errorMsg2").innerText=""
+        }
+
+        function allCal(){
+        
+         sum();
+         substract();
+         division();
+         multiply();
+      }
+
+        
+       </script>
+        
+
+
+
+    </body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<body>
+<script>
+function mode(a,b,c){
+if(a<b && b<c ){
+return "strictMode"
+}
+else if (c>a && b<=a && b<=c){
+return "Softmode"
+}
+else {
+return false
+}
+}  
+document.write(mode(10,15,31),"<br>")  
+document.write(mode(24,22,31),"<br>")  
+document.write(mode(22,22,31),"<br>")  
+document.write(mode(10,32,31),"<br>")  
+</script>    
+</body>    
+</html>

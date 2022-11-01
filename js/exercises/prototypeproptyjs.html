@@ -1,0 +1,18 @@
+<html>
+ <body>
+  <p id="demo"></p>  
+  <script>
+function person(first,last,age,eye){
+this.firstName=first;
+this.lastName=last;
+this.age=age;
+this.eye=eye;
+}
+person.prototype.nationality="indian";
+
+const myfather = new person("ammi","raju",58,"brown")
+
+document.getElementById("demo").innerHTML= "my father nationality is"+myfather.nationality+"<br>"
+  </script>  
+ </body>   
+</html>

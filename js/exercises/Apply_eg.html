@@ -1,0 +1,11 @@
+<html>
+<body>
+<script>
+    function test(...arg){
+    document.write(this.num,"<br>",arg[0],"<br>",arg[1]);
+    }
+    
+    test.apply({num:100},[10,20])
+</script>    
+</body>    
+</html>

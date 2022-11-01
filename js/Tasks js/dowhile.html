@@ -1,0 +1,18 @@
+<html>
+<body>
+<script>
+    var actualpin="3456";
+    var pin;
+    var count=0;
+    do{
+        pin=prompt("enter your pin","enter..");
+        count++;
+    }while(pin!=actualpin && count<3);
+    if(pin===actualpin){
+        document.write("welcome user");
+    }else{
+        document.write("account locked");
+    }
+</script>    
+</body>    
+</html>

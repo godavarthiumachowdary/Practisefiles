@@ -1,0 +1,157 @@
+<html>
+
+<head>
+    <style>
+        #img2 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 100px;
+
+
+
+        }
+
+        .card {
+            box-shadow: 0 1px 1px 1px;
+            width: 30%;
+            border-radius: 5px;
+            background-color: white;
+            padding-left: 35px;
+            padding-top: 1px;
+            padding-bottom: 25px;
+            margin-left: 500px;
+        }
+    </style>
+    <link rel="stylesheet" href="fbsignuptask.css">
+    <script src="./fbsignuptask.js"></script>
+</head>
+
+</div>
+
+<body style="background-color: rgb(245, 239, 239)"
+    onload="createDateOptions();createMonthOptions();createYearOptions(); displayoptionfunction()">
+
+
+
+
+    <img id="img2" class="facebook-img" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+    <div class="card" id="card">
+        <div>
+            <p
+             style="font-size:25px;font-weight:600;font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;text-align:center;">
+
+                Create a new account</p>
+            <div style="margin-top:-20px;color:#606770;text-align:center;">it's quick and easy.</div>
+            <hr>
+            <div class="container">
+
+                <div style="display:flex;text-align:center;">
+
+                    <div>
+                        <form>
+                            <input type="text" placeholder="First name" id="fname" name="firstnm"
+                                onblur=" firstnamevalidity()" onkeyup="firstnamevalidity()"
+                                style="height: 38px; width: 200px; margin-top:6px;border: 1px solid #ccd0d5;"><img
+                                id="img6">
+                    </div>
+
+                    <div style="padding-left:10px">
+                        <input type="text" placeholder="Sur name" name="surnm" id="sname" onblur="surnamevalidity()"
+                            onkeyup="surnamevalidity()"
+                            style="height:38px;width:200px;margin-top:6px;border: 1px solid #ccd0d5;border-radius:5px;"><img
+                            id="img7">
+                    </div>
+                </div>
+
+                <div id="div2">
+                    <input type="text" placeholder="Mobile number or email Address" name="mobilenm"id="mobileoremail" 
+                    onblur="mobileoremail_Validity()" onkeyup="mobileoremail_Validity()"
+                    style="height: 38px; width: 410px; border: 1px solid #ccd0d5;border-radius:5px;">
+                <img id="img8">
+                </div>
+
+                <div style="padding-top:10px">
+                    <input type="password" placeholder="New password" name="mobilenm" id="psswrd"
+                 style="height: 38px; width: 410px;  border: 1px solid #ccd0d5;
+                border-radius:5px;"onblur= "passwordvalidity()" onkeyup="passwordvalidity()">
+                <img id="img10"> 
+                </div>
+                <div style="display:flex;">
+                    <div style="font-size:14;color:#606770;padding-top:18px;">Date of birth </div>
+                    <img id="img3"
+                        src="C:\Users\pavan\Desktop\my projects\js\Tasks js\fb signup page task\images\question mark.png"
+                        alt="question mark">
+                </div>
+                <img id="img4">
+                <div>
+
+
+                    <select class="selectclass" id="select1" onclick=" DOBvalidity()"></select>
+
+                    <select class="selectclass" id="select2" onclick=" DOBvalidity()"></select>
+
+                    <select class="selectclass" id="select3" onclick=" DOBvalidity()"></select>
+
+                    <div style="display:flex;">
+
+                        <div id="div1">Gender <img id="img9"></div>
+                        <div>
+                            <img id="img1"
+                                src="C:\Users\pavan\Desktop\my projects\js\Tasks js\fb signup page task\images\question mark.png"
+                                alt="question mark">
+                        </div>
+
+                    </div>
+                    <div class="div5">
+                        <div id="id1">
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" id="female" style="margin-left:40px;"
+                                onclick="displayfunction()">
+                        </div>
+                        <div id="id1">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="male" style="margin-left:40px;"
+                                onclick="displayfunction()">
+                        </div>
+                        <div id="id1">
+                            <label for="custom">Custom</label>
+                            <input type="radio" name="gender" id="custom" style="margin-left:40px;"
+                                onclick="showorhidefunction()">
+                        </div>
+                    </div>
+
+                </div>
+                <img id="img5">
+                <div style="margin-top:80px;">
+                    <select class="options" id="selectbirthday"  onchange="pronounValidity()">
+                        <option value="0" id="selectpronoun"> select your pronoun </option>
+                        <option value="1" id="her"> She:"Wish her a happy birthday!"</option>
+                        <option value="2" id="him"> He:"Wish him a happy birthday!"</option>
+                        <option value="3" id="them"> They:"Wish them a happy birthday!"</option>
+                    </select>
+                </div>
+                <div class="div8" id="pronoun">Your pronoun is visible to everyone.</div>
+
+
+                <input type="text" id="genderOption" placeholder="Gender(optional)">
+
+                <div id="div9">People who use our service may have uploaded your contact information to <br> Facebook.
+                    Learn
+                    more.</div>
+                <div id="div9">By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy.<br> You
+                    may
+                    receive SMS notifications from us and can opt out at any time
+                </div>
+
+
+                <div id="div10"><button type="button" id="button1"onclick="signupvalidity()">Sign Up</button>
+                </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

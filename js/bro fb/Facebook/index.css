@@ -1,0 +1,256 @@
+.card
+{
+    box-shadow: 0 1px 1px 1px;
+    width: 100%;
+    border-radius: 5px;
+}
+.container
+{
+    margin:25px;
+    padding-bottom: 30px;
+}
+.bodycss
+{
+    margin-top: 46px;
+    margin-left: 459px;
+    margin-right: 433px; 
+    margin-bottom: 10px;
+}
+#div1
+{
+    margin-top: 10px; 
+    margin-bottom: 0px;
+}
+#heading1
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#div2
+{
+    margin-top: 10px; 
+    margin-left: 325px; 
+    position: absolute;
+    right: 409px;
+}
+#img1
+{
+    height:"22px";
+    width:"22px";
+    margin-right: 29px;
+}
+#img4
+{
+    position: absolute;
+    left: 651px;
+    right: 805;
+    top: 139.6;
+    width: 23px;
+    height: 24.725;
+    padding-top: 4px;
+    display: none;
+}
+#img5
+{
+    position: absolute;
+    right: 605;
+    left: 855;
+    top: 138.6;
+    width: 23px;
+    height: 24.725;
+    padding-top: 4px;
+    display: none;
+
+}
+#img6
+{
+    position: absolute;
+    left: 848;
+    right: 600;
+    top: 188.6;
+    width: 23px;
+    height: 24.725;
+    padding-top: 5px;
+    display: none;
+}
+#img7
+{
+    position: absolute;
+    left: 848;
+    right: 600;
+    top: 238.6;
+    width: 23px;
+    height: 24.725;
+    padding-top: 4px;
+    display: none;
+}
+#img8
+{
+    position: absolute;
+    left: 853;
+    right: 595;
+    top: 285.6;
+    width: 23px;
+    height: 24.725;
+    display: none;
+}
+#img9
+{
+    position: absolute;
+    left: 848;
+    right: 595;
+    top: 352.8;
+    width: 23px;
+    height: 24.725;
+    padding-top: 4px;
+    display: none;
+}
+#img10
+{
+    position: absolute;
+    right: 585;
+    width: 23px;
+    height: 24.725;
+    padding-top: 1px;
+    top: 441.2;
+    left: 835px;
+    display: none;
+}
+#heading2
+{
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif; 
+    font-weight: normal;
+    color: #606770;
+    font-size: 15px;
+    line-height: 24px; 
+    margin-bottom: 10px; 
+    margin-top: 0px;
+}
+#input1
+{
+    padding: 11px; 
+    margin-right: 10px;
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+}
+#input2
+{
+    padding: 11px;
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+}
+.div3
+{
+    margin-top: 10px;
+    color: #606770;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+.input3
+{
+    width: 391px; 
+    padding: 11px;
+    background-color: #f5f6f7;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+}
+.selectclass
+{
+    padding-left: 8px; 
+    padding-right: 54px; 
+    padding-top: 6px; 
+    padding-bottom: 6px; 
+    margin-right: 12px;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+}
+#selectid
+{
+    margin-top: 5px;
+}
+#div4
+{
+    margin-bottom: 3px;
+    color: #606770;
+    font-family: SFProText-Medium, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+}
+.div5
+{
+    box-sizing: border-box; 
+    width: 118px; 
+    height: 40px; 
+    border: 1px solid #ccd0d5;
+    border-radius: 5px; 
+    display: flex; 
+    margin-right: 20px;
+}
+.label
+{
+    padding-left: 8px; 
+    padding-right: 35px; 
+    padding-top: 6px; 
+    padding-bottom: 6px;
+    margin-top: 5px;
+}
+.div6
+{
+    margin-top:10px; 
+    font-size: 12px;
+    color: #606770;
+}
+#div7
+{
+    margin-top:10px;
+}
+#input4
+{
+    box-sizing: border-box; 
+    width: 150px; 
+    height: 40px; 
+    border: 1px #000000 solid; 
+    border-radius: 5px; 
+    margin-top: 20px;
+    margin-left: 130px;
+    background-color: rgb(0,164,0);
+    color:white;
+    font-size: larger;
+}
+a
+{
+    text-decoration: none;
+}
+#selectcomment
+{
+    margin-top: 4px;
+    margin-bottom: 8px;
+    color: #606770;
+    font-size: 12px;
+}
+#select3
+{
+    margin-top: 15px;
+    font-size: medium;
+    width: 391px;
+    height: 32px;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+}
+#optional
+{
+    width: 393px;
+    height: 41px;
+    border: 1px solid #ccd0d5;
+    background-color: #f5f6f7;
+    border-radius: 5px;
+    font-size: 15px;
+    padding-left: 11px;
+}
+.container
+{
+    margin-top: 10px;
+}

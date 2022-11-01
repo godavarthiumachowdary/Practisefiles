@@ -1,0 +1,20 @@
+<html>
+<body>
+<script>
+function range(n,x,y){
+if(n<40 || n>10000){
+    return false
+}    
+else if(n>x && n<y){
+    return true
+}
+else{
+    return false
+}
+}
+document.write( range(10,40,4000),"<br>")
+document.write( range(30.50,1000),"<br>")
+document.write( range(30.50,100000),"<br>")
+</script>    
+</body>    
+</html>

@@ -1,0 +1,36 @@
+<html>
+
+<body>
+  <script>
+    function numbrrange(a, b) {
+      if (a > 0 && b > 0) {
+
+        if ((a > 40 && a < 60) || (b < 60 && b > 40)) {
+
+          if (a > b) {
+            return a
+          }
+          else {
+            return b
+          }
+          
+        }else{
+          return false;
+        }
+
+      }else{
+
+        return false;
+        
+      }
+
+
+
+    }
+    document.write(numbrrange(50, 58), "<br>")
+    document.write(numbrrange(58, 50), "<br>")
+    document.write(numbrrange(30, 61), "<br>")
+  </script>
+</body>
+
+</html>

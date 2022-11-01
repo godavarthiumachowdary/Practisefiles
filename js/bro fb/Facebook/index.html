@@ -1,0 +1,93 @@
+<html>
+
+<!-- https://www.w3resource.com/javascript/form/javascript-sample-registration-form-validation.php -->
+
+<head>
+    <title>Facebook login page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="./index.js"></script>  
+</head>
+
+<body class="bodycss" onload="createDateOptions();createMonthOptions();createYearOptions();hideFun();displayImg()">
+    <div class="card" id="card">
+        <div class="container">
+            <div style="display: flex;">
+                <div id="div1"><h1 id="heading1">Sign Up</h1></div>
+                <div id="div2"><img id="img1" onclick="hidepage()"></div>
+            </div>
+            <div>
+                <h4 id="heading2">It's quick and easy.</h4>
+            </div>
+            <div>
+                <hr size="1">
+            </div>
+            <div style="display: flex;">
+                <div><input type="text" placeholder="First name" id="input1" onblur="firstname_is_valid()" onkeyup="firstname_is_valid()"><img id="img4"></input></div>
+                <div><input type="text" placeholder="Surname" id="input2" onblur="surname_is_valid()" onkeyup="surname_is_valid()"><img id="img5"></input></div>
+            </div>
+            <div class="div3">
+                <input type="text" placeholder="Mobile number or email address" class="input3" id="input3" onblur="mobile_email_is_valid()" onchange="mobile_email_is_valid()"><img id="img6"></input>
+            </div>
+            <div class="div3"> 
+                <input type="password" placeholder="New password" class="input3" id="input_4" onblur="password_is_valid()" onchange="password_is_valid()"><img id="img7"></input>
+            </div>
+            <div class="div3" id="input5">Date of birth<img id="img2"><img id="img8"></div>
+            <div>
+                <form>
+                    <select class="selectclass" id="select1"  onclick="dob_is_valid()"></select>
+                
+                    <select class="selectclass" id="select2"  onclick="dob_is_valid()"></select>
+                
+                    <select class="selectclass" id="selectid"  onclick="dob_is_valid()"></select>
+                    
+                </form>
+            </div>
+
+            <div>
+                <div id="div4" id="input6">Gender<img id="img3"><img id="img9"></div>
+
+                <div style="display: flex;">
+
+                    <div class="div5">
+                        <label class="label">Female</label>
+                        <input type="radio" name="Gender" id="gender_option1" value="Female" onclick="displayFun()"></input>
+                    </div>
+                              
+                    <div class="div5">
+                        <label class="label">Male</label>
+                        <input type="radio" name="Gender" id="gender_option2" value="Male" onclick="displayFun()"></input>
+                    </div>  
+
+                    <div class="div5">
+                        <label class="label">Custom</label>
+                        <input type="radio" name="Gender" id="gender_option3" value="Custom" onclick="showorhide()"></input>
+                    </div>
+                </div>
+
+                <div>
+                    <form>
+                        <select id="select3" aria-placeholder="Select your pronoun" id="input7" onclick="select_prnoun_is_valid()"></select>
+                        <img id="img10">
+                        <div id="selectcomment">Your pronoun is visible to everyone.</div>
+                        <input type="text" id="optional" placeholder="Gender (optional)"></input>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="div6">People who use our service may have uploaded your contact information to Facebook. <a href="#">Learn
+                    more</a></div>
+            <div class="div6">By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a
+                    href="#">Cookies Policy</a>. You may receive SMS notifications from us and can opt out at any time.
+            </div>
+
+            <div id="div7">
+                <button id="input4" onclick="formValidation()">Sign Up</button></input>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
